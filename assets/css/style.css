@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: pink;
+}
+
+.container {
+  width: 66%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 1.2rem 0;
+}
+
+.container .title {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: .6rem;
+  text-transform: uppercase;
+}
+
+.container .input {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#start {
+  margin-bottom: 1rem;
+}
+
+.container .input label {
+  margin-bottom: 0.4rem;
+}
+
+#user {
+  margin-bottom: 0.4rem;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.subtitle {
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Game Container */
+
+.gameContainer {
+  width: 56%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  display: none;
+}
+
+.gameContainer .score {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.scoring {
+  border: 1px solid black;
+  padding: 0.6rem;
+  background-color: rgba(165, 42, 42, 0.288);
+}
+
+.game {
+  width: 60%;
+  margin: 0.6rem auto;
+  background-color: rgba(165, 42, 42, 0.288);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  padding: 0.6rem;
+  margin-top: 2rem;
+}
+
+.game .far {
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.far:hover {
+  cursor: pointer;
+  transform: rotate(65deg);
+}
+
+#reset {
+  width: 10%;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 0.3rem 1rem;
+}
+
+.message {
+  width: 20%;
+  margin: 0 auto;
+  border: 1px solid black;
+  margin-top: 1rem;
+  background-color: rgba(165, 42, 42, 0.288);
+}
+
+.redColor {
+  color: red;
+}
