@@ -153,3 +153,22 @@ body {
 .maxWidth {
   max-width: 50% !important;
 }
+
+@media screen and (max-width: 768px) {
+  .gameContainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .score {
+    width: 100%;
+  }
+  .scoring {
+    width: 46% !important;
+  }
+  .message {
+    width: 40%;
+  }
+  #reset {
+    width: 20%;
+  }
+}
