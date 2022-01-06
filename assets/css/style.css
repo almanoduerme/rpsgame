@@ -25,7 +25,7 @@ body {
   width: 100%;
   text-align: center;
   font-weight: 700;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
   text-transform: uppercase;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 .gameContainer .score {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -81,9 +81,17 @@ body {
 }
 
 .scoring {
+  width: 40%;
+  min-height: 24vh;
   border: 1px solid black;
   padding: 0.6rem;
   background-color: rgba(165, 42, 42, 0.288);
+}
+
+.scoring h2 {
+  background-color: rgb(204, 124, 138);
+  border: 1px solid black;
+  margin-bottom: 0.8rem;
 }
 
 .game {
@@ -134,4 +142,14 @@ body {
 
 .redColor {
   color: red;
+}
+
+.pcPlay,
+.userPlay {
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+.maxWidth {
+  max-width: 50% !important;
 }

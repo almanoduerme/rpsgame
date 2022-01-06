@@ -6,6 +6,8 @@ let handScissors = document.querySelector(".handScissors");
 let userScore = document.querySelector("#userScore");
 let pcScore = document.querySelector("#pcScore");
 let message = document.querySelector(".message");
+let userPlay = document.querySelector(".userPlay");
+let pcPlay = document.querySelector(".pcPlay");
 const body = document.querySelector("body");
 const startButton = document.querySelector("#start");
 const input = document.querySelector(".input");
@@ -24,11 +26,13 @@ startButton.addEventListener("click", function () {
 handRock.addEventListener("click", function () {
   handRock = 0;
   choicePC();
+  showRock();
 });
 
 handPaper.addEventListener("click", function () {
   handPaper = 1;
   choicePC();
+  showPaper();
 });
 
 handScissors.addEventListener("click", function () {
@@ -66,6 +70,7 @@ const showGame = () => {
 const choicePC = () => {
   let random = Math.floor(Math.random() * 3);
   logica(random);
+  showHandPC(random);
 };
 
 const logica = (random) => {
@@ -110,4 +115,31 @@ const resetGame = () => {
   userScore.innerHTML = 0;
   pcScore.innerHTML = 0;
   message.innerHTML = `<p>CHAN CHAN...</p>`;
+  userPlay.innerHTML = ``;
+  pcPlay.innerHTML = ``;
+};
+
+const showHandPC = (random) => {
+  console.log(random);
+  if (random === 0) {
+    pcPlay.innerHTML = `<img class='maxWidth' src="assets/img/rock.svg" alt="rock">`;
+  } else if (random === 1) {
+    pcPlay.innerHTML = `<img class='maxWidth' src="assets/img/paper.svg" alt="paper">`;
+  } else if (random === 2) {
+    pcPlay.innerHTML = `<img class='maxWidth' src="assets/img/scissors.svg" alt="scissors">`;
+  } else {
+    console.log("error");
+  }
+};
+
+const showRock = () => {
+  userPlay.innerHTML = `<img class='maxWidth' src="assets/img/rock.svg" alt="rock">`;
+};
+
+const showPaper = () => {
+  userPlay.innerHTML = `<img class='maxWidth' src="assets/img/paper.svg" alt="paper">`;
+};
+
+const showScissors = () => {
+  userPlay.innerHTML = `<img class='maxWidth' src="assets/img/scissors.svg" alt="scissors">`;
 };
